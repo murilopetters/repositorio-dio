@@ -1,3 +1,4 @@
+from operator import contains
 import textwrap
 
 def menu():
@@ -74,7 +75,7 @@ def criar_conta(agencia, numero_conta, usuarios):
     if usuario:
         print('\nConta criada com sucesso!')
         conta = {'agencia': agencia, 'numero_conta': numero_conta, 'usuario': usuario}
-        contas.append(conta)
+        contains.append(conta)
     else:
         print('\nUsuario não encontrado, fluxo de criação de conta encerrado: ')
     return conta if usuario else None
